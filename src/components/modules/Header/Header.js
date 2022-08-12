@@ -1,6 +1,9 @@
 // Framework Imports
 import React from 'react'
 
+// Asset Imports
+import HexaLogo from './assets/hexapixel_logo.jpg'
+
 // CSS Imports
 import StyledHeader from './StyledHeader'
 
@@ -10,7 +13,11 @@ import StyledHeader from './StyledHeader'
 const Header = () => {
   return (
     <StyledHeader>
-      <h1>The Template 2022</h1>
+      <img src={HexaLogo} alt="Hexapixel Logo" />
+      <nav>
+        <a href="/">Home</a>
+        <a href="/">Resume</a>
+      </nav>
     </StyledHeader>
   )
 }
