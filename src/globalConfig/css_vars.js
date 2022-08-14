@@ -1,20 +1,10 @@
 // Colors
-const darkGrey = '#26303b'
-const headerGrey = '#1A2129'
-const darkBlue = '#2f6173'
-const midBlue = '#348ABF'
-const lightBlue = '#30bff2'
-const lightestBlue = '#44d5f2'
-
-// Other
-const spacing = '20px'
+const black = '#000000'
+const cyberBlue = '#00abdf'
+const white = '#ffffff'
 
 export {
-  darkBlue,
-  darkGrey,
-  headerGrey,
-  midBlue,
-  lightBlue,
-  lightestBlue,
-  spacing,
+  black,
+  cyberBlue,
+  white,
 }

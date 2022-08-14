@@ -24,9 +24,14 @@ Initial building of the Portfolio App.
 Overall
 ### Added
 - Alias's for Global Assets and Global Config folder
+- Added css_vars implementation
+
 ### Changed
 - Updated file paths to Global Assets and Global Config files to use new aliases
+- Updated styles to use new CSS declarations.
+
 Header Image
+
 ### Added
 - Hero Image BG Image asset
 - Hero Image Component

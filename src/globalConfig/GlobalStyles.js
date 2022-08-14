@@ -1,7 +1,11 @@
+// Library Imports
 import { createGlobalStyle } from 'styled-components'
 
 // Asset Imports
 import hexarepeat from 'globalAssets/images/hexrepeat2.jpg'
+
+// Variable Imports
+import { cyberBlue, white } from './css_vars'
 
 const GlobalStyle = createGlobalStyle`
   /* Font Family Declarations */
@@ -61,9 +65,15 @@ const GlobalStyle = createGlobalStyle`
     border-spacing: 0;
   }
 
+  body {
+    background-image: url(${hexarepeat});
+    background-repeat: repeat;
+  }
+
   /* END OF RESET */
+
   h1 {
-    color: #000000;
+    color: ${cyberBlue};
     font-family: 'MontserratBold';
     font-size:36px;
     font-weight: bold;
@@ -71,7 +81,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
-    color: #000000;
+    color: ${cyberBlue};
     font-family: 'Montserrat', sans-serif;
     font-size:28px;
     font-weight: bold;
@@ -81,7 +91,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h3 {
-    color: #000000;
+    color: ${cyberBlue};
     font-family: 'Montserrat', sans-serif;
     font-size:26px;
     font-weight: bold;
@@ -90,7 +100,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h4 {
-    color: #000000;
+    color: ${cyberBlue};
     font-family: 'Montserrat', sans-serif;
     font-size:24px;
     font-weight: 700;
@@ -99,21 +109,21 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h5 {
-    color: #000000;
+    color: ${cyberBlue};
     font-family: 'Montserrat', sans-serif;
     font-size:22px;
     text-transform: uppercase;
   }
 
   h6 {
-    color: #000000;
+    color: ${cyberBlue};
     font-family: 'Montserrat', sans-serif;
     font-size:20px;
     text-transform: uppercase;
   }
 
   p {
-    color: #000000;
+    color: ${cyberBlue};
     font-family: 'Montserrat', sans-serif;
     font-size:18px;
     line-height:20px;
@@ -121,7 +131,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #ffffff;
+    background-color: ${white};
   }
 `
 

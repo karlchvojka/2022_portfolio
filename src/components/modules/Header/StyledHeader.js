@@ -1,7 +1,11 @@
 // Library Imports
 import styled from 'styled-components'
 
+// Variable Imports
+import { black, cyberBlue, white } from 'globalConfig/css_vars'
+
 const StyledHeader = styled.header`
+  background-color: ${white};
   display: grid;
   grid-template-columns: 35px 130px;
   justify-content: space-between;
@@ -19,11 +23,15 @@ const StyledHeader = styled.header`
     width: 130px;
 
     a:link, a:visited {
-      color: #000;
+      color: ${black};
       font-family: 'MontserratBold', sans-serif;
       font-weight: 800;
       text-decoration: none;
       text-transform: uppercase;
+    }
+
+    a:hover, a:active {
+      color: ${cyberBlue};
     }
   }
 `
