@@ -35,6 +35,8 @@ module.exports = {
           ['src', './src'],
           ['public', './public'],
           ['elements', './src/components/elements'],
+          ['globalAssets', './src/globalAssets'],
+          ['globalConfig', './src/globalConfig'],
           ['modules', './src/components/modules'],
           ['layouts', './src/components/layouts'],
         ],

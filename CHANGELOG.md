@@ -20,6 +20,12 @@ Initial building of the Portfolio App.
 - Updated Project Readme.md
 
 ## [1.0.1] - 2022-08-14
+
+Overall
+### Added
+- Alias's for Global Assets and Global Config folder
+### Changed
+- Updated file paths to Global Assets and Global Config files to use new aliases
 Header Image
 ### Added
 - Hero Image BG Image asset

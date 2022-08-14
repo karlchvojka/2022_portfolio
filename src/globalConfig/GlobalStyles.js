@@ -1,5 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 
+// Asset Imports
+import hexarepeat from 'globalAssets/images/hexrepeat2.jpg'
+
 const GlobalStyle = createGlobalStyle`
   /* Font Family Declarations */
 
