@@ -6,6 +6,7 @@ import Header from 'modules/Header/Header'
 
 // Component Imports
 import GlobalStyle from 'src/globalConfig/GlobalStyles'
+import HeroImage from 'modules/HeroImage/HeroImage'
 
 // CSS Imports
 import GlobalFonts from 'src/globalAssets/fonts/fonts'
@@ -17,8 +18,7 @@ const App = () => {
       <GlobalFonts />
       <GlobalStyle />
       <Header />
-      <h1>Welcome to React App thats build using Webpack and Babel separately</h1>
-      <h2>This is stuff</h2>
+      <HeroImage />
     </StyledApp>
   )
 }
