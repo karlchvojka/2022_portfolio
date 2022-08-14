@@ -18,3 +18,9 @@ Initial building of the Portfolio App.
 - Updated Changelog
 - Updated package.json
 - Updated Project Readme.md
+
+## [1.0.1] - 2022-08-14
+Header Image
+### Added
+- Hero Image BG Image asset
+- Hero Image Component
