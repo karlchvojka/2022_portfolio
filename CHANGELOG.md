@@ -31,7 +31,12 @@ Overall
 - Updated styles to use new CSS declarations.
 
 Header Image
-
 ### Added
 - Hero Image BG Image asset
 - Hero Image Component
+
+## [1.0.2] - 2022-08-16
+
+### Added
+- Skills section wrap.
+- Added Accordion.
