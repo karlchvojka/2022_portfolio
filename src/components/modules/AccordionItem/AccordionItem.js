@@ -11,8 +11,9 @@ import StyledAccordionItem from './StyledAccordionItem'
  * This the AccordionItem component.
  * @param { string } title - Title of the section
  * @param { bool } def - An Item to be open by default.
+ * @param { array } skillList - List of skills
  */
-const AccordionItem = ({ title, def }) => {
+const AccordionItem = ({ title, def, skillList }) => {
   // State Declarations
   const [isActive, setIsActive] = useState(def ? true : false)
 
@@ -28,12 +29,16 @@ const AccordionItem = ({ title, def }) => {
         </section>
         {
           isActive && <section className="accordion_item_content">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-              laborum cupiditate possimus labore, hic temporibus velit dicta earum
-              suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-              voluptatem.
-            </p>
+            { 
+              skillList.map(( skill, index ) => (
+                <section className='skillItem' key={skill.title + index}>
+                  <h4>{skill.title}</h4>
+                  <section className="progressWrap">
+                    <section className="progressInner" style={{width: `${skill.perc}`}}><p>{skill.perc}</p></section>
+                  </section>
+                </section>
+              ))
+            }
           </section>
         }
       </section>

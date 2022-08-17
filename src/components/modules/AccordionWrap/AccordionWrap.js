@@ -20,6 +20,7 @@ const AccordionWrap = ({ data }) => {
             key={section.key}
             def={section.def}
             title={section.title}
+            skillList={section.skillList}
           />
         ))
       }
