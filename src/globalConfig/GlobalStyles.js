@@ -5,7 +5,7 @@ import { createGlobalStyle } from 'styled-components'
 import hexarepeat from 'globalAssets/images/bgrep.png'
 
 // Variable Imports
-import { cyberBlue, white } from './css_vars'
+import { cyberBlue, link, white } from './css_vars'
 
 const GlobalStyle = createGlobalStyle`
   /* Font Family Declarations */
@@ -127,6 +127,16 @@ const GlobalStyle = createGlobalStyle`
     font-size:18px;
     line-height:20px;
     margin-bottom:10px;
+  }
+
+  a:link, a:visited {
+    color: ${link};
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: ${cyberBlue};
   }
 
   body {
