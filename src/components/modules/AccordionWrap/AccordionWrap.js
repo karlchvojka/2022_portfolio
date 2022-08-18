@@ -17,9 +17,8 @@ const AccordionWrap = ({ data }) => {
     <StyledAccordionWrap>
       { 
         data.map(( section, index ) => (
-          <CornerWrap>
+          <CornerWrap key={section.key}>
             <AccordionItem 
-              key={section.key}
               def={section.def}
               title={section.title}
               skillList={section.skillList}

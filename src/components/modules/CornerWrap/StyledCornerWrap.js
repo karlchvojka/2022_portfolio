@@ -6,14 +6,14 @@ import { cyberBlue, darkBlue } from 'globalConfig/css_vars'
 
 const StyledCornerWrap = styled.section`
   background-color: ${cyberBlue};
-  clip-path: polygon(20px 0, 100% 0, 100% 99%, 0 100%, 0 20px);
+  clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%, 0 20px);
   margin-bottom: 5px;
   padding-bottom: 4px;
   position: relative;
 
   .cornerWrapInner {
     background-color: ${darkBlue};
-    clip-path: polygon(20px 0, 100% 0, 100% 99%, 0 100%, 0 20px);
+    clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%, 0 20px);
     height: calc(100% - 32px);
     position: relative;
     top: 2px;
