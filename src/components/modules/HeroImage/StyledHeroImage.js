@@ -9,6 +9,8 @@ const StyledHeroImage = styled.section`
   background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
+  -webkit-box-shadow: 0px 7px 5px -1px rgba(0,171,223,0.58); 
+  box-shadow: 0px 7px 5px -1px rgba(0,171,223,0.58);
   display:flex;
   height:300px;
   margin:0 auto;

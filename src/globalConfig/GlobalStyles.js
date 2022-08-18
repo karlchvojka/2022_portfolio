@@ -2,7 +2,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 // Asset Imports
-import hexarepeat from 'globalAssets/images/hexrepeat2.jpg'
+import hexarepeat from 'globalAssets/images/bgrep.png'
 
 // Variable Imports
 import { cyberBlue, white } from './css_vars'
@@ -74,7 +74,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     color: ${cyberBlue};
-    font-family: 'MontserratBold';
+    font-family: 'MontserratBold', sans-serif;
     font-size:36px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -82,9 +82,8 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     color: ${cyberBlue};
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'MontserratBold', sans-serif;
     font-size:28px;
-    font-weight: bold;
     margin-bottom: 20px;
     margin-top: 20px;
     text-transform: uppercase;
@@ -92,7 +91,7 @@ const GlobalStyle = createGlobalStyle`
 
   h3 {
     color: ${cyberBlue};
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'MontserratBold', sans-serif;
     font-size:26px;
     font-weight: bold;
     margin-bottom: 20px;
