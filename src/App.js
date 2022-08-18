@@ -2,10 +2,11 @@
 import React from 'react'
 
 // Library Imports
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 // Component Imports
 import Home from 'pages/Home/Home'
+import Resume from 'pages/Resume/Resume'
 
 // CSS Imports
 import GlobalStyle from 'src/globalConfig/GlobalStyles'
@@ -17,7 +18,10 @@ const App = () => {
     <StyledApp>
       <GlobalFonts />
       <GlobalStyle />
-      <Home/>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/resume' element={<Resume />} />
+      </Routes>
     </StyledApp>
   )
 }
