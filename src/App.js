@@ -5,6 +5,7 @@ import React from 'react'
 import Header from 'layouts/Header/Header'
 import HeroImage from 'layouts/HeroImage/HeroImage'
 import Skills from 'layouts/Skills/Skills'
+import Projects from 'layouts/Projects/Projects'
 
 // CSS Imports
 import GlobalStyle from 'src/globalConfig/GlobalStyles'
@@ -18,6 +19,7 @@ const App = () => {
       <GlobalStyle />
       <Header />
       <HeroImage />
+      <Projects />
       <Skills />
     </StyledApp>
   )
