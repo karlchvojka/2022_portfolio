@@ -26,7 +26,6 @@ const StyledHeader = styled.header`
       color: ${black};
       font-family: 'MontserratBold', sans-serif;
       font-weight: 800;
-      text-decoration: none;
       text-transform: uppercase;
     }
 
@@ -34,6 +33,7 @@ const StyledHeader = styled.header`
       color: ${cyberBlue};
     }
   }
+
 `
 
 export default StyledHeader

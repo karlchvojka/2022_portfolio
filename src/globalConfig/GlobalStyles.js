@@ -65,10 +65,16 @@ const GlobalStyle = createGlobalStyle`
 
   /* END OF RESET */
 
+  /* MOBILE FIRST DEFAULT STYLES */
+
+  body {
+    background-color: ${white};
+  }
+
   h1 {
     color: ${cyberBlue};
     font-family: 'MontserratBold', sans-serif;
-    font-size:36px;
+    font-size:32px;
     font-weight: bold;
     margin-bottom: 20px;
   }
@@ -76,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
   h2 {
     color: ${cyberBlue};
     font-family: 'MontserratBold', sans-serif;
-    font-size:28px;
+    font-size:30px;
     margin-bottom: 20px;
     margin-top: 20px;
     text-transform: uppercase;
@@ -85,7 +91,7 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     color: ${cyberBlue};
     font-family: 'MontserratBold', sans-serif;
-    font-size:26px;
+    font-size:28px;
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -94,7 +100,7 @@ const GlobalStyle = createGlobalStyle`
   h4 {
     color: ${cyberBlue};
     font-family: 'Montserrat', sans-serif;
-    font-size:24px;
+    font-size:26px;
     font-weight: 700;
     margin-bottom:20px;
     text-transform: uppercase;
@@ -103,28 +109,29 @@ const GlobalStyle = createGlobalStyle`
   h5 {
     color: ${cyberBlue};
     font-family: 'Montserrat', sans-serif;
-    font-size:22px;
+    font-size:25px;
     text-transform: uppercase;
   }
 
   h6 {
     color: ${cyberBlue};
     font-family: 'Montserrat', sans-serif;
-    font-size:20px;
+    font-size:24px;
     text-transform: uppercase;
   }
 
   p {
     color: ${cyberBlue};
     font-family: 'Montserrat', sans-serif;
-    font-size:18px;
-    line-height:20px;
+    font-size:16px;
+    line-height:18px;
     margin-bottom:10px;
   }
 
   a:link, a:visited {
     color: ${link};
     font-family: 'Montserrat', sans-serif;
+    font-size:16px;
     text-decoration: none;
   }
 
@@ -132,11 +139,28 @@ const GlobalStyle = createGlobalStyle`
     color: ${cyberBlue};
   }
 
-  body {
-    background-color: ${white};
-  }
+  /* Min width of 576 */
+  ${media.landscapePhones `
+    
+  `}
 
+  /* Min width of 768 */
+  ${media.tablet `
+    
+  `}
+
+  /* Min width of 1024 */
   ${media.desktop `
+    
+  `}
+
+  /* Min width of 1200 */
+  ${media.widescreen `
+    
+  `}
+
+  /* Min width of 1980 */
+  ${media.udh `
     
   `}
 `
