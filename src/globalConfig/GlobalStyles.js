@@ -74,7 +74,7 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     color: ${cyberBlue};
     font-family: 'MontserratBold', sans-serif;
-    font-size:32px;
+    font-size:21px;
     font-weight: bold;
     margin-bottom: 20px;
   }
@@ -82,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
   h2 {
     color: ${cyberBlue};
     font-family: 'MontserratBold', sans-serif;
-    font-size:30px;
+    font-size:18px;
     margin-bottom: 20px;
     margin-top: 20px;
     text-transform: uppercase;
@@ -91,7 +91,7 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     color: ${cyberBlue};
     font-family: 'MontserratBold', sans-serif;
-    font-size:28px;
+    font-size:16px;
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -100,7 +100,7 @@ const GlobalStyle = createGlobalStyle`
   h4 {
     color: ${cyberBlue};
     font-family: 'Montserrat', sans-serif;
-    font-size:26px;
+    font-size:15px;
     font-weight: 700;
     margin-bottom:20px;
     text-transform: uppercase;
@@ -109,21 +109,21 @@ const GlobalStyle = createGlobalStyle`
   h5 {
     color: ${cyberBlue};
     font-family: 'Montserrat', sans-serif;
-    font-size:25px;
+    font-size:15px;
     text-transform: uppercase;
   }
 
   h6 {
     color: ${cyberBlue};
     font-family: 'Montserrat', sans-serif;
-    font-size:24px;
+    font-size:15px;
     text-transform: uppercase;
   }
 
   p {
     color: ${cyberBlue};
     font-family: 'Montserrat', sans-serif;
-    font-size:16px;
+    font-size:14px;
     line-height:18px;
     margin-bottom:10px;
   }
@@ -131,7 +131,7 @@ const GlobalStyle = createGlobalStyle`
   a:link, a:visited {
     color: ${link};
     font-family: 'Montserrat', sans-serif;
-    font-size:16px;
+    font-size:14px;
     text-decoration: none;
   }
 
@@ -141,27 +141,117 @@ const GlobalStyle = createGlobalStyle`
 
   /* Min width of 576 */
   ${media.landscapePhones `
-    
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 21px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    h5 {
+      font-size: 18px;
+    }
+    h6 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+    a:link, a:visited {
+      font-size: 14px;
+    }
   `}
 
   /* Min width of 768 */
   ${media.tablet `
-    
+    h1 {
+      font-size: 26px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 22px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    h5 {
+      font-size: 20px;
+    }
+    h6 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    a:link, a:visited {
+      font-size: 16px;
+    }
   `}
 
   /* Min width of 1024 */
   ${media.desktop `
-    
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 34px;
+    }
+    h3 {
+      font-size: 33px;
+    }
+    h4 {
+      font-size: 32px;
+    }
+    h5 {
+      font-size: 31px;
+    }
+    h6 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    a:link, a:visited {
+      font-size: 16px;
+    }
   `}
 
   /* Min width of 1200 */
   ${media.widescreen `
-    
+    h1 {}
+    h2 {}
+    h3 {}
+    h4 {}
+    h5 {}
+    h6 {}
+    p {
+      font-size: 18px;
+      line-height:22px;
+    }
+    a:link, a:visited {
+      font-size: 18px;
+    }
   `}
 
   /* Min width of 1980 */
   ${media.udh `
-    
+    h1 {}
+    h2 {}
+    h3 {}
+    h4 {}
+    h5 {}
+    h6 {}
+    p {}
+    a:link, a:visited {}
   `}
 `
 

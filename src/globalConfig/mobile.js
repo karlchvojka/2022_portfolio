@@ -6,7 +6,9 @@ const sizes = {
   widescreen: 1200,
   desktop: 1024,
   tablet: 768,
-  landscapePhones: 576
+  landscapePhones: 576,
+  iphoneXr: 414,
+  iphoneSe: 375,
 }
 
 export default Object.keys(sizes).reduce((acc, label) => {
