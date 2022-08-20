@@ -1,5 +1,6 @@
 // Library Imports
 import { createGlobalStyle } from 'styled-components'
+import media from 'globalConfig/mobile'
 
 // Variable Imports
 import { cyberBlue, link, white } from './css_vars'
@@ -134,6 +135,10 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${white};
   }
+
+  ${media.desktop `
+    
+  `}
 `
 
 export default GlobalStyle
