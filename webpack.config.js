@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'main.js',
+    publicPath: '/'
   },
   target: 'web',
   devServer: {
@@ -14,6 +15,7 @@ module.exports = {
     open: true,
     hot: true,
     liveReload: true,
+    historyApiFallback: true,
   },
   resolve: {
     alias: {
