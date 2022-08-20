@@ -52,3 +52,18 @@ Header Image
 
 ### Added
 - Resume page
+
+# [2.0.0]
+This release is the addition of the responsive styles to the app.
+This is a major refactor, and will effect ALL components
+
+## [2.0.0] - 2022-08-20
+
+### Added
+- Mobile Configuration
+- globalConfig/mobile JS
+  - Added function to be used within the styled-components to handle media queries.
+
+### Changed
+- Global Styles Responsive styles.
+- Header Component Responsive styles.

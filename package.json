@@ -1,6 +1,6 @@
 {
   "name": "2022_portfolio",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Karl Chvojka's Portfolio",
   "main": "index.js",
   "scripts": {
