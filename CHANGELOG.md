@@ -40,3 +40,15 @@ Header Image
 ### Added
 - Skills section wrap.
 - Added Accordion.
+
+
+## [1.0.3] - 2022-08-17
+
+### Added
+- Projects Wrap
+- Projects Individual
+
+## [1.0.4] - 2022-08-19
+
+### Added
+- Resume page
