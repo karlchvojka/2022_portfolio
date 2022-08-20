@@ -1,10 +1,13 @@
 // Library Imports
 import styled from 'styled-components'
+import media from 'globalConfig/mobile'
 
 // Variable Imports
 import { black, cyberBlue, white } from 'globalConfig/css_vars'
 
 const StyledHeader = styled.header`
+  /* MOBILE FIRST DEFAULT STYLES */
+
   background-color: ${white};
   display: grid;
   grid-template-columns: 35px 130px;
@@ -34,6 +37,15 @@ const StyledHeader = styled.header`
     }
   }
 
+  /* Min width of 768 */
+    ${media.tablet `
+      grid-template-columns: 35px 150px;
+
+      nav {
+        grid-template-columns: 42% 58%;
+        column-gap: 10px;
+      }
+    `}
 `
 
 export default StyledHeader

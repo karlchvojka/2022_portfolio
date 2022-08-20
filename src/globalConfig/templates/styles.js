@@ -6,6 +6,16 @@ const GlobalStyle = createGlobalStyle`
 
 /* MOBILE FIRST DEFAULT STYLES */
 
+/* Min width of 375 */
+  ${media.iphoneSe `
+    
+  `}
+
+/* Min width of 414 */
+  ${media.iphoneXr `
+    
+  `}
+
 /* Min width of 576 */
   ${media.landscapePhones `
     
