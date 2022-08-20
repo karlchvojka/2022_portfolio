@@ -65,6 +65,8 @@ const GlobalStyle = createGlobalStyle`
 
   /* END OF RESET */
 
+  /* MOBILE FIRST DEFAULT STYLES */
+
   h1 {
     color: ${cyberBlue};
     font-family: 'MontserratBold', sans-serif;
@@ -136,7 +138,28 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${white};
   }
 
+  /* Min width of 576 */
+  ${media.landscapePhones `
+    
+  `}
+
+  /* Min width of 768 */
+  ${media.tablet `
+    
+  `}
+
+  /* Min width of 1024 */
   ${media.desktop `
+    
+  `}
+
+  /* Min width of 1200 */
+  ${media.widescreen `
+    
+  `}
+
+  /* Min width of 1980 */
+  ${media.udh `
     
   `}
 `
