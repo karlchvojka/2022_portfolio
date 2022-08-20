@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'main.js',
+    publicPath: '/'
   },
   target: 'web',
   devServer: {
@@ -14,6 +15,7 @@ module.exports = {
     open: true,
     hot: true,
     liveReload: true,
+    historyApiFallback: true,
   },
   resolve: {
     alias: {
@@ -25,6 +27,7 @@ module.exports = {
       globalConfig: path.resolve(__dirname, './src/globalConfig'),
       modules: path.resolve(__dirname, './src/components/modules'),
       layouts: path.resolve(__dirname, './src/components/layouts'),
+      pages: path.resolve(__dirname, './src/components/pages'),
     },
     extensions: ['.js', '.jsx', '.json'],
   },
@@ -37,11 +40,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
+        type: 'asset/resource',
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,

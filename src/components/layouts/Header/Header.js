@@ -1,6 +1,9 @@
 // Framework Imports
 import React from 'react'
 
+// Library Imports
+import { Link } from "react-router-dom";
+
 // Asset Imports
 import HexaLogo from './assets/hexapixel_logo.jpg'
 
@@ -15,8 +18,8 @@ const Header = () => {
     <StyledHeader>
       <img src={HexaLogo} alt="Hexapixel Logo" />
       <nav>
-        <a href="/">Home</a>
-        <a href="/">Resume</a>
+        <Link to="/">Home</Link>
+        <Link to="resume">Resume</Link>
       </nav>
     </StyledHeader>
   )

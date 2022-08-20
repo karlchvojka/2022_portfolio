@@ -1,15 +1,11 @@
 // Library Imports
 import { createGlobalStyle } from 'styled-components'
 
-// Asset Imports
-import hexarepeat from 'globalAssets/images/bgrep.png'
-
 // Variable Imports
 import { cyberBlue, link, white } from './css_vars'
 
 const GlobalStyle = createGlobalStyle`
   /* Font Family Declarations */
-
   /*
     START OF RESET
     http://meyerweb.com/eric/tools/css/reset/
@@ -65,10 +61,6 @@ const GlobalStyle = createGlobalStyle`
     border-spacing: 0;
   }
 
-  body {
-    background-image: url(${hexarepeat});
-    background-repeat: repeat;
-  }
 
   /* END OF RESET */
 

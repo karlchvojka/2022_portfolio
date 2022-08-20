@@ -2,6 +2,8 @@ import { createGlobalStyle } from 'styled-components'
 
 import MonserratReg from './Montserrat/static/Montserrat-Regular.ttf'
 import MonserratBold from './Montserrat/static/Montserrat-Bold.ttf'
+import LatoReg from './Lato/Lato-Regular.ttf'
+import RobotoCond from './Roboto_Condensed/RobotoCondensed-Regular.ttf'
 
 export default createGlobalStyle`
   @font-face {
@@ -13,4 +15,14 @@ export default createGlobalStyle`
     font-family: 'MontserratBold';
     src: url(${MonserratBold}) format('truetype');
   }
+
+  @font-face {
+    font-family: 'Lato';
+    src: url(${LatoReg}) format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto Condensed';
+    src: url(${RobotoCond}) format('truetype');
+  }
+  
 `
