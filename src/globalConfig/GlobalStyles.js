@@ -148,10 +148,10 @@ const GlobalStyle = createGlobalStyle`
       font-size: 22px;
     }
     h3 {
-      font-size: 21px;
+      font-size: 20px;
     }
     h4 {
-      font-size: 20px;
+      font-size: 18px;
     }
     h5 {
       font-size: 18px;
@@ -202,19 +202,19 @@ const GlobalStyle = createGlobalStyle`
       font-size: 35px;
     }
     h2 {
-      font-size: 34px;
-    }
-    h3 {
       font-size: 33px;
     }
+    h3 {
+      font-size: 30px;
+    }
     h4 {
-      font-size: 32px;
+      font-size: 28px;
     }
     h5 {
-      font-size: 31px;
+      font-size: 26px;
     }
     h6 {
-      font-size: 30px;
+      font-size: 24px;
     }
     p {
       font-size: 16px;
