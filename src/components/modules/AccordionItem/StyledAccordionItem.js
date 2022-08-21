@@ -1,10 +1,12 @@
 // Library Imports
 import styled from 'styled-components'
+import media from 'globalConfig/mobile'
 
 // Variable Imports
 import { cyberBlue, darkBlue, link} from 'globalConfig/css_vars'
 
 const StyledAccordionItem = styled.section`
+  /* MOBILE FIRST DEFAULT STYLES */
 
   .accordion_item_title {
     background-color: ${darkBlue};
@@ -23,7 +25,7 @@ const StyledAccordionItem = styled.section`
     }
 
     img {
-      transform: rotate(${props => props.isActive})
+      transform: rotate(${props => props.isActive});
     }
   }
 
@@ -36,12 +38,12 @@ const StyledAccordionItem = styled.section`
   .accordion_item_content {
     padding: 20px 55px 20px 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 130px;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
 
     .skillItem {
       h4 {
-        font-size: 20px;
+        font-size: 14px;
         font-family: 'MontserratBold';
         margin-bottom: 4px;
       }
@@ -71,6 +73,58 @@ const StyledAccordionItem = styled.section`
       }
     }
   }
+
+  /* Min width of 576 */
+    ${media.landscapePhones `
+      .accordion_item_content {
+
+        .skillItem {
+          h4 {
+            font-size: 20px;
+          }
+        }
+      }
+    `}
+
+  /* Min width of 768 */
+    ${media.tablet `
+      .accordion_item_content {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 100px;
+
+        .skillItem {
+          h4 {
+            font-size: 20px;
+          }
+        }
+      }
+    `}
+
+  /* Min width of 1024 */
+    ${media.desktop `
+      .accordion_item_content {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 80px;
+
+        .skillItem {
+          h4 {
+            font-size: 24px;
+          }
+        }
+      }
+    `}
+
+  /* Min width of 1200 */
+    ${media.widescreen `
+      .accordion_item_content {
+        grid-column-gap: 130px;
+      }
+    `}
+
+  /* Min width of 1980 */
+    ${media.udh `
+      
+    `}
 `
 
 export default StyledAccordionItem
