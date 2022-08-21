@@ -1,5 +1,5 @@
 # ReactJS Template 2022
-This is a CRA Alternative to be used to bootstrap new projects.  
+This is a CRA Alternative to be used to bootstrap new projects  
 
 ## Requirements
 Make sure you are running the following:  
