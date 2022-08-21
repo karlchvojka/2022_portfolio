@@ -14,7 +14,7 @@ As this is a template, only the basics are installed:
 - Babel v7.18.10
 
 ## Getting started
-Fork repo into a directory, and cd into it.
+Fork repo into a directory, and cd into it
 
 ### Installing
 Run `npm install`

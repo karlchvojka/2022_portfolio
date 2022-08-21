@@ -1,21 +1,26 @@
 const path = require('path')
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: 'development',
-  entry: './index.js',
+  entry: {
+    main: path.resolve(__dirname, './index.js'),
+  },
   output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'main.js',
-    publicPath: '/'
+    path: path.resolve(__dirname, './dist'),
+    filename: '[name].bundle.js',
   },
   target: 'web',
   devServer: {
-    port: '9500',
-    static: ['./public'],
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
     open: true,
     hot: true,
     liveReload: true,
     historyApiFallback: true,
+    port: process.env.PORT || 3000,
+    allowedHosts: 'all'
   },
   resolve: {
     alias: {
@@ -46,6 +51,20 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
       },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader"
+          }
+        ]
+      }
     ],
   },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: path.resolve(__dirname, './src/template.html'), // template file
+      filename: 'index.html', // output file
+    })
+  ]
 }
