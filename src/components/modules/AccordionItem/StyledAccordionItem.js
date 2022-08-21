@@ -89,6 +89,7 @@ const StyledAccordionItem = styled.section`
   /* Min width of 768 */
     ${media.tablet `
       .accordion_item_content {
+        padding: 20px 20px 20px 20px;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 100px;
 
