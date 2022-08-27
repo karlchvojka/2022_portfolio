@@ -1,3 +1,6 @@
+/**
+ * File is used to work with the Heroku hosting platform.
+ */
 var path = require('path');
 var express = require('express');
 

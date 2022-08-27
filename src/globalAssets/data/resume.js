@@ -1,3 +1,7 @@
+/**
+ * Define data for the Work Experience section.
+ */
+
 const resume = {
   workExperience: {
     title: 'Work Experience',

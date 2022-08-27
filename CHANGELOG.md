@@ -67,3 +67,12 @@ This is a major refactor, and will effect ALL components
 ### Changed
 - Global Styles Responsive styles.
 - Header Component Responsive styles.
+
+## [2.0.1] - 2022-08-24
+
+### Added
+- Edits to webpack config
+- Config for Heroku hosting complete.
+
+### Changed
+- Webpack config updated for heroku configuration

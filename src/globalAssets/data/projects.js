@@ -1,3 +1,6 @@
+/**
+ * Define data for the projects section.
+ */
 const projects = [
   {
     title: 'Portfolio Rebuild - 2022',
