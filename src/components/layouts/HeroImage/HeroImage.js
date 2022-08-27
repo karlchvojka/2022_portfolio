@@ -1,8 +1,6 @@
 // Framework Imports
 import React from 'react'
 
-// Asset Imports
-
 // CSS Imports
 import StyledHeroImage from './StyledHeroImage'
 

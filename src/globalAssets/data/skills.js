@@ -1,3 +1,6 @@
+/**
+ * Define data for the skills section.
+ */
 const skills = [
   {
     key: 'lang',

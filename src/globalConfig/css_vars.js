@@ -1,4 +1,4 @@
-// Colors
+// Color Variable Declarations
 const black = '#000000'
 const cyberBlue = '#00abdf'
 const darkBlue = '#010610'

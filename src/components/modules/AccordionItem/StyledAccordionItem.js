@@ -121,11 +121,6 @@ const StyledAccordionItem = styled.section`
         grid-column-gap: 130px;
       }
     `}
-
-  /* Min width of 1980 */
-    ${media.udh `
-      
-    `}
 `
 
 export default StyledAccordionItem

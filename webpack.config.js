@@ -1,16 +1,33 @@
+// Framework Imports
 const path = require('path')
+
+// Plugin Library Imports
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: 'development',
+  
+  /** 
+   * Sets the entry point for the app post build.
+   * Configured entry for the index.js file.
+   */
   entry: {
     main: path.resolve(__dirname, './index.js'),
   },
+
+  /**
+   * Sets where the files that are built are saved.
+   */
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: '[name].bundle.js',
   },
+
   target: 'web',
+
+  /**
+   * Dev server configuration
+   */
   devServer: {
     static: {
       directory: path.join(__dirname, "dist"),
@@ -23,6 +40,10 @@ module.exports = {
     allowedHosts: 'all'
   },
   resolve: {
+
+    /**
+     * Configuration of aliases.
+     */
     alias: {
       path: require.resolve('path-browserify'),
       public: path.resolve(__dirname, './public'),
@@ -34,9 +55,14 @@ module.exports = {
       layouts: path.resolve(__dirname, './src/components/layouts'),
       pages: path.resolve(__dirname, './src/components/pages'),
     },
+
     extensions: ['.js', '.jsx', '.json'],
   },
   module: {
+
+    /**
+     * Rules configuration for file type imports.
+     */
     rules: [
       {
         test: /\.(js|jsx)$/,
@@ -60,8 +86,14 @@ module.exports = {
         ]
       }
     ],
+
   },
+
+  /**
+   * Plugin configurations.
+   */
   plugins: [
+    
     new HtmlWebPackPlugin({
       template: path.resolve(__dirname, './src/template.html'), // template file
       filename: 'index.html', // output file
