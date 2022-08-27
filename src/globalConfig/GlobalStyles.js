@@ -227,12 +227,6 @@ const GlobalStyle = createGlobalStyle`
 
   /* Min width of 1200 */
   ${media.widescreen `
-    h1 {}
-    h2 {}
-    h3 {}
-    h4 {}
-    h5 {}
-    h6 {}
     p {
       font-size: 18px;
       line-height:22px;
@@ -244,12 +238,6 @@ const GlobalStyle = createGlobalStyle`
 
   /* Min width of 1980 */
   ${media.udh `
-    h1 {}
-    h2 {}
-    h3 {}
-    h4 {}
-    h5 {}
-    h6 {}
     p {}
     a:link, a:visited {}
   `}

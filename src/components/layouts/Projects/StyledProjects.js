@@ -62,11 +62,6 @@ const StyledProjects = styled.section`
         }
       }
     `}
-
-  /* Min width of 1980 */
-    ${media.udh `
-      
-    `}
 `
 
 export default StyledProjects
