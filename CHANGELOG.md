@@ -76,3 +76,8 @@ This is a major refactor, and will effect ALL components
 
 ### Changed
 - Webpack config updated for heroku configuration
+
+## [2.0.2] - 2022-08-26
+
+### Changed
+- Cleaning up final documentation, and removal of unneeded code.
