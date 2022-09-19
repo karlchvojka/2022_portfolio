@@ -81,3 +81,13 @@ This is a major refactor, and will effect ALL components
 
 ### Changed
 - Cleaning up final documentation, and removal of unneeded code.
+
+## [2.0.3] - 2022-09-15
+Added Weather App Rebuild project
+
+### Added
+- ./src/globalAssets/images/projects/weather_rebuild.png
+
+### Changed
+- ./src/globalAssets/data/projects.js
+  - Added Weather App details

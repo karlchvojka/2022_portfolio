@@ -3,6 +3,13 @@
  */
 const projects = [
   {
+    title: 'Weather App Rebuild - 2022',
+    image: require('globalAssets/images/projects/weather_rebuild.png'),
+    desc: '2022 Rebuild of the Weather app. An example of a simple API call, and Typescript. App runs within Docker containers, and is Gitlab CI/CD capable.',
+    tech: 'ReactJS, Webpack 5, Babel 7, TypeScript, Docker, Gitlab CI/CD, ESLint, Styled-Components, React Router',
+    git: 'https://github.com/karlchvojka/weather_app_rebuild'
+  },
+  {
     title: 'Portfolio Rebuild - 2022',
     image: require('globalAssets/images/projects/portfolio_rebuild_2022.PNG'),
     desc: 'The 2022 rebuild of my portfolio, using the below ReactJS Template below.',
