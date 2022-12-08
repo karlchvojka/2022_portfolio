@@ -27,6 +27,10 @@ const skills = [
         title: 'ES6',
         perc: '100%',
       },
+      {
+        title: 'Liquid',
+        perc: '50%',
+      }
     ],
   },
   {
@@ -89,6 +93,14 @@ const skills = [
       {
         title: 'JQuery',
         perc: '100%',
+      },
+      {
+        title: 'Tailwind CSS',
+        perc: '50%',
+      },
+      {
+        title: 'Shopify',
+        perc: '50%',
       },
     ]
   },

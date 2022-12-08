@@ -7,6 +7,23 @@ const resume = {
     title: 'Work Experience',
     placements: [
       {
+        company: 'Open Mind Developments',
+        dates: 'Nov 2022 - Dec 2022',
+        desc: 'Front-End Development focusing on Customer interaction with the Shopify platform.',
+        keywords: [
+          'Front-End Development (HTML5, CSS3, CSS Grid, Flexbox)',
+          'JavaScript',
+          'jQuery',
+          'Tailwind',
+          'Shopify',
+          'ESLint',
+          'JSX',
+          'Developement Operations',
+          'Gitlab CI/CD',
+        ],
+        position: 'Front-End Developer'
+      },
+      {
         company: 'Kepler Communications',
         dates: 'Mar 2021 - Jul 2022',
         desc: 'Front-End developer building interfaces for handling Communication Satellite monitoring and configuration, and configuring continuous integration, deployments and testing for each.',

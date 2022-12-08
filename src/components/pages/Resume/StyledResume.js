@@ -141,11 +141,21 @@ const StyledResume = styled.section`
 
     .skillsWrap {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       column-gap: 20px;
+      text-align: center;
 
-      section h3 {
-        font-family: "Roboto Condensed", sans-serif;
+      section {
+        margin-top: 20px;
+      
+        h3 {
+          font-family: "Roboto Condensed", sans-serif;
+        }
+
+        .LibrariesandFrameworks ul {
+          display:grid;
+          grid-template-columns: 1fr;
+        }
       }
     }
   }
@@ -185,6 +195,10 @@ const StyledResume = styled.section`
     .skills {
       .skillsWrap {
         grid-template-columns: 1fr 1fr 1fr;
+        .LibrariesandFrameworks ul {
+          display:grid;
+          grid-template-columns: 1fr 1fr;
+        }
       }
     }
     `}
