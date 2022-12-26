@@ -91,3 +91,13 @@ Added Weather App Rebuild project
 ### Changed
 - ./src/globalAssets/data/projects.js
   - Added Weather App details
+
+## [2.0.2] - 2022-12-07
+- ./src/components/pages/Resume/Resume.js
+- ./src/components/pages/Resume/StyledResume.js
+- ./src/globalAssets/data/resume.js
+- ./src/globalAssets/data/skills.js
+  - Updated content
+  
+## [2.1.0] - 2022-12-26
+- Updated Nodejs Req to 19.x (Current)
