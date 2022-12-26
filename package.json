@@ -4,13 +4,13 @@
   "description": "Karl Chvojka's Portfolio",
   "main": "index.js",
   "engines": {
-    "node": "18.x",
-    "npm": "9.x"
+    "node": "19.x"  
   },
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-prebuild": "npm install --dev",
     "build": "webpack --mode production"
   },
   "author": "Karl Chvojka",
